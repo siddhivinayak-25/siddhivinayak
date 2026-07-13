@@ -8,25 +8,39 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
 <!-- NAV -->
 <header class="nav" id="nav">
-  <a href="#top" class="nav-mark">SIDDHIVINAYAK<span>.</span></a>
+  <a href="#top" class="nav-mark">Siddhivinayak<span>.</span></a>
   <nav class="nav-links">
     <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#process">Process</a>
+    <a href="#stack">Stack</a>
+    <a href="#life">Life</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a href="#contact" class="nav-cta">Start a project</a>
+  <div class="nav-right">
+    <div class="nav-socials">
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.2-3.37-1.2-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7.2 9.8h2.6v8.4H7.2Zm1.3-4.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM11.6 9.8h2.5v1.2h.03c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4v4.58h-2.6v-4.06c0-.97-.02-2.2-1.34-2.2-1.35 0-1.55 1.05-1.55 2.14v4.12h-2.6Z" fill="var(--bg)"/></svg>
+      </a>
+      <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="https://youtube.com/@your-channel" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="5" width="20" height="14" rx="5"/><path d="M10 9.5v5l4.5-2.5Z" fill="var(--bg)"/></svg>
+      </a>
+    </div>
+    <a href="#contact" class="nav-cta">Say hi 👋</a>
+  </div>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
@@ -34,98 +48,107 @@
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <canvas id="graph"></canvas>
+  <div class="hero-mosaic" id="heroMosaic" aria-hidden="true"></div>
+
   <div class="hero-inner">
     <p class="eyebrow">AI Product Engineer · Automation Developer</p>
-    <h1>
-      I build software that runs your
-      <span class="hero-cycle"><span class="hero-cycle-inner">
-        <span>ideas</span>
-        <span>hiring</span>
-        <span>workflows</span>
-        <span>backend</span>
-        <span>ideas</span>
-      </span></span>
-      &nbsp;— on its own.
-    </h1>
+    <h1>I build stuff that runs your business while you sleep 😌</h1>
     <p class="hero-sub">
-      I'm Siddhivinayak Waghmode. I design and ship AI-powered web applications, business
-      automation systems, and full-stack SaaS products — the kind founders can actually put in
-      front of customers.
+      Hey, I'm Siddhivinayak — I design and ship AI-powered web apps, automation systems,
+      and full-stack SaaS products for founders who'd rather show a working demo than a slide deck.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Let's build together</a>
-      <a href="#work" class="btn btn-ghost">View projects</a>
+      <a href="#work" class="btn btn-ghost">See the work</a>
     </div>
-    <div class="hero-stats">
-      <div><strong>7K+</strong><span>LinkedIn community</span></div>
-      <div><strong>10+</strong><span>Production projects</span></div>
-      <div><strong>1×</strong><span>Hackathon winner</span></div>
+  </div>
+
+  <div class="hero-photo-card">
+    <div class="window-chrome"><span></span><span></span><span></span></div>
+    <img src="images/hero/photo-01.jpg" alt="Siddhivinayak Waghmode" loading="lazy"
+         onerror="this.style.display='none'; this.closest('.hero-photo-card').classList.add('media-fallback')">
+    <div class="media-fallback-content" aria-hidden="true">
+      <p>That's me 👋</p>
+      <span>Add images/hero/photo-01.jpg</span>
     </div>
+    <div class="floating-pill pill-top">🏆 <span>Hackathon Winner</span></div>
+    <div class="floating-pill pill-bottom">⚡ <span>10+ Shipped Projects</span></div>
   </div>
 </section>
 
-<!-- TRUSTED TECH MARQUEE -->
-<section class="marquee-wrap" aria-label="Technologies I work with">
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>React</span><span>FastAPI</span><span>LangChain</span><span>Node.js</span>
-      <span>Supabase</span><span>n8n</span><span>Zoho</span><span>PostgreSQL</span>
-      <span>Docker</span><span>OpenAI</span><span>Claude</span><span>MongoDB</span>
-      <span>React</span><span>FastAPI</span><span>LangChain</span><span>Node.js</span>
-      <span>Supabase</span><span>n8n</span><span>Zoho</span><span>PostgreSQL</span>
-      <span>Docker</span><span>OpenAI</span><span>Claude</span><span>MongoDB</span>
-    </div>
-  </div>
+<!-- STAT STRIP -->
+<section class="stat-strip">
+  <div><strong>7K+</strong><span>LinkedIn community</span></div>
+  <div class="dot">•</div>
+  <div><strong>10+</strong><span>Production projects</span></div>
+  <div class="dot">•</div>
+  <div><strong>1×</strong><span>Hackathon winner</span></div>
+  <div class="dot">•</div>
+  <div><strong>2026</strong><span>Currently building</span></div>
 </section>
 
 <!-- SERVICES -->
 <section class="section" id="services">
   <div class="section-head">
     <p class="eyebrow">What I do</p>
-    <h2>Six ways I help businesses ship faster</h2>
+    <h2>Six ways I help you ship faster</h2>
   </div>
 
   <div class="services-grid">
-    <article class="service-card">
+    <article class="service-card tilt-1">
       <span class="service-index">01</span>
       <h3>AI Web Applications</h3>
-      <p>Custom applications built on modern LLMs, RAG pipelines, and autonomous AI agents — using LangChain and FastAPI under the hood.</p>
+      <p>Custom apps on modern LLMs, RAG pipelines, and AI agents — LangChain + FastAPI doing the heavy lifting.</p>
     </article>
-    <article class="service-card">
+    <article class="service-card tilt-2">
       <span class="service-index">02</span>
       <h3>SaaS Product Development</h3>
-      <p>Full products from idea to deployment: auth, billing, dashboards, and an architecture that survives your first 10,000 users.</p>
+      <p>Idea to deployment: auth, billing, dashboards, and an architecture that survives your first 10K users.</p>
     </article>
-    <article class="service-card">
+    <article class="service-card tilt-1">
       <span class="service-index">03</span>
       <h3>Business Automation</h3>
-      <p>Repetitive work removed with n8n, Zoho, WhatsApp, email, and CRM integrations that talk to each other correctly.</p>
+      <p>The repetitive stuff, gone — n8n, Zoho, WhatsApp, email and CRM integrations that actually talk to each other.</p>
     </article>
-    <article class="service-card">
+    <article class="service-card tilt-2">
       <span class="service-index">04</span>
       <h3>Internal Business Tools</h3>
-      <p>Dashboards, ERP modules, CRM systems, inventory and logistics software your team will actually want to open.</p>
+      <p>Dashboards, ERP modules, CRM and inventory software your team will genuinely want to open.</p>
     </article>
-    <article class="service-card">
+    <article class="service-card tilt-1">
       <span class="service-index">05</span>
       <h3>API Development</h3>
-      <p>Secure, documented REST APIs in FastAPI or Node.js — with the auth, database, and third-party plumbing already solved.</p>
+      <p>Secure, documented REST APIs in FastAPI or Node — auth, database, and third-party plumbing solved.</p>
     </article>
-    <article class="service-card">
+    <article class="service-card tilt-2">
       <span class="service-index">06</span>
       <h3>AI Integrations</h3>
-      <p>ChatGPT, Claude, Gemini, DeepSeek, embeddings, and vector databases wired directly into your existing product.</p>
+      <p>ChatGPT, Claude, Gemini, embeddings and vector databases, wired straight into your existing product.</p>
     </article>
   </div>
 </section>
 
+<!-- TECH ORBIT -->
+<section class="section section-alt" id="stack">
+  <div class="section-head center">
+    <p class="eyebrow">Tech stack</p>
+    <h2>What's actually running under the hood</h2>
+  </div>
+
+  <div class="tech-orbit" id="techOrbit">
+    <div class="orbit-hub">Core<br>Stack</div>
+    <div class="ring" id="orbitRing"></div>
+  </div>
+
+  <div class="tech-fallback-list" id="techFallback" aria-hidden="true"></div>
+</section>
+
 <!-- SELECTED PROJECTS -->
-<section class="section section-alt" id="work">
+<section class="section" id="work">
   <div class="section-head">
     <p class="eyebrow">Selected work</p>
-    <h2>Projects built for real businesses</h2>
-    <p class="section-desc">A few systems I've shipped — from a hiring-intelligence platform to hackathon-winning risk models. Replace the screenshots in <code>/images</code> with your own to make these live.</p>
+    <h2>A few things I've actually shipped</h2>
+    <p class="section-desc">Drop real screenshots into <code>/images</code> and these go from mockup to portfolio in minutes.</p>
   </div>
 
   <div class="projects">
@@ -133,7 +156,7 @@
     <article class="project" id="proj-1">
       <div class="project-media">
         <div class="window-chrome"><span></span><span></span><span></span></div>
-        <img src="images/hiresprint.png" alt="HireSprint AI product screenshot" loading="lazy"
+        <img src="images/hiresprint.jpg" alt="HireSprint AI product screenshot" loading="lazy"
              onerror="this.style.display='none'; this.closest('.project-media').classList.add('media-fallback')">
         <div class="media-fallback-content" aria-hidden="true">
           <p>HireSprint AI</p>
@@ -153,7 +176,7 @@
     <article class="project reverse" id="proj-2">
       <div class="project-media">
         <div class="window-chrome"><span></span><span></span><span></span></div>
-        <img src="images/logistic.jpg" alt="Logistics AI Dashboard screenshot" loading="lazy"
+        <img src="images/logistics-dashboard.jpg" alt="Logistics AI Dashboard screenshot" loading="lazy"
              onerror="this.style.display='none'; this.closest('.project-media').classList.add('media-fallback')">
         <div class="media-fallback-content" aria-hidden="true">
           <p>Logistics AI Dashboard</p>
@@ -193,7 +216,7 @@
     <article class="project reverse" id="proj-4">
       <div class="project-media">
         <div class="window-chrome"><span></span><span></span><span></span></div>
-        <img src="images/document.jpg" alt="AI Document Assistant screenshot" loading="lazy"
+        <img src="images/document-assistant.jpg" alt="AI Document Assistant screenshot" loading="lazy"
              onerror="this.style.display='none'; this.closest('.project-media').classList.add('media-fallback')">
         <div class="media-fallback-content" aria-hidden="true">
           <p>AI Document Assistant</p>
@@ -231,6 +254,16 @@
     </article>
 
   </div>
+</section>
+
+<!-- LIFE / PHOTO MOSAIC SECTION -->
+<section class="section section-alt life" id="life">
+  <div class="section-head center">
+    <p class="eyebrow">Off the screen</p>
+    <h2>Internships, hackathons, and the people along the way</h2>
+    <p class="section-desc">Hover a photo to bring it into focus.</p>
+  </div>
+  <div class="life-grid" id="lifeGrid"></div>
 </section>
 
 <!-- EXPERIENCE -->
@@ -271,36 +304,12 @@
     <h2>Six steps, one shipped product</h2>
   </div>
   <div class="process-grid">
-    <div class="process-step">
-      <span class="process-num">01</span>
-      <h3>Discovery</h3>
-      <p>Understand the business problem before touching a single line of code.</p>
-    </div>
-    <div class="process-step">
-      <span class="process-num">02</span>
-      <h3>Planning</h3>
-      <p>Architecture, data model, and a development roadmap you can see progress against.</p>
-    </div>
-    <div class="process-step">
-      <span class="process-num">03</span>
-      <h3>Design</h3>
-      <p>A modern, responsive interface people actually enjoy using.</p>
-    </div>
-    <div class="process-step">
-      <span class="process-num">04</span>
-      <h3>Development</h3>
-      <p>Frontend, backend, AI, and APIs built together, not bolted on afterward.</p>
-    </div>
-    <div class="process-step">
-      <span class="process-num">05</span>
-      <h3>Testing</h3>
-      <p>Performance, security, and edge cases checked before your users find them.</p>
-    </div>
-    <div class="process-step">
-      <span class="process-num">06</span>
-      <h3>Deployment</h3>
-      <p>Shipped to the cloud with documentation and support, not a zip file and a goodbye.</p>
-    </div>
+    <div class="process-step"><span class="process-num">01</span><h3>Discovery</h3><p>Understand the business problem before touching a single line of code.</p></div>
+    <div class="process-step"><span class="process-num">02</span><h3>Planning</h3><p>Architecture, data model, and a roadmap you can see progress against.</p></div>
+    <div class="process-step"><span class="process-num">03</span><h3>Design</h3><p>A modern, responsive interface people actually enjoy using.</p></div>
+    <div class="process-step"><span class="process-num">04</span><h3>Development</h3><p>Frontend, backend, AI, and APIs built together, not bolted on after.</p></div>
+    <div class="process-step"><span class="process-num">05</span><h3>Testing</h3><p>Performance, security, and edge cases checked before your users find them.</p></div>
+    <div class="process-step"><span class="process-num">06</span><h3>Deployment</h3><p>Shipped to the cloud with documentation and support, not a zip file and a goodbye.</p></div>
   </div>
 </section>
 
@@ -392,7 +401,6 @@
     </div>
 
     <form class="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
-      <!-- FormSubmit configuration -->
       <input type="hidden" name="_subject" value="New message from your portfolio site">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
@@ -427,10 +435,19 @@
 
 <footer class="footer">
   <span>© <span id="year"></span> Siddhivinayak Waghmode</span>
-  <div class="footer-links">
-    <a href="mailto:your-email@example.com">Email</a>
-    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+  <div class="footer-socials">
+    <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.2-3.37-1.2-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7.2 9.8h2.6v8.4H7.2Zm1.3-4.1a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM11.6 9.8h2.5v1.2h.03c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4v4.58h-2.6v-4.06c0-.97-.02-2.2-1.34-2.2-1.35 0-1.55 1.05-1.55 2.14v4.12h-2.6Z" fill="var(--bg)"/></svg>
+    </a>
+    <a href="https://instagram.com/your-handle" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+    </a>
+    <a href="https://youtube.com/@your-channel" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="5" width="20" height="14" rx="5"/><path d="M10 9.5v5l4.5-2.5Z" fill="var(--bg)"/></svg>
+    </a>
   </div>
 </footer>
 
