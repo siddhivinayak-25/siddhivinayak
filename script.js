@@ -68,6 +68,21 @@ function photoTileHTML(src, extraClass = '') {
   grid.innerHTML = html;
 })();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------------------------------------------
 // Tech orbit — radial layout, ring spins, items counter-spin to stay upright
 // ---------------------------------------------
@@ -112,6 +127,12 @@ function photoTileHTML(src, extraClass = '') {
   ring.innerHTML = ringHTML;
   if (fallback) fallback.innerHTML = fallbackHTML;
 })();
+
+
+
+
+
+
 
 // ---------------------------------------------
 // Reveal-on-scroll
