@@ -420,36 +420,83 @@
       </div>
     </div>
 
-    <form class="contact-form" action="https://formsubmit.co/el/rodite" method="POST">
-      <input type="hidden" name="_subject" value="New message from your portfolio site">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none">
-      <!-- Note: Removed the broken _next redirect line. Add it back only when you have a real live URL -->
+        <form
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST">
 
-      <label>
+    <!-- Required -->
+    <input
+        type="hidden"
+        name="access_key"
+        value="779e2ef9-630b-4737-9e1c-a6f449b81acb">
+
+    <!-- Optional -->
+    <input
+        type="hidden"
+        name="subject"
+        value="New Portfolio Enquiry">
+
+    <input
+        type="hidden"
+        name="from_name"
+        value="SV Portfolio">
+
+    <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none">
+
+    <label>
         <span>Name</span>
-        <input type="text" name="name" required placeholder="Your name">
-      </label>
-      <label>
+        <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required>
+    </label>
+
+    <label>
         <span>Email</span>
-        <input type="email" name="email" required placeholder="you@company.com">
-      </label>
-      <label>
+        <input
+            type="email"
+            name="email"
+            placeholder="you@company.com"
+            required>
+    </label>
+
+    <label>
         <span>Budget</span>
+
         <select name="budget">
-          <option value="Not sure yet">Not sure yet</option>
-          <option value="Under Rs 5,000">Under Rs 5,000</option>
-          <option value="Rs 5,000 – 10,000">Rs 5,000 – 10,000</option>
-          <option value="Rs 20,000+">Rs 20,000+</option>
+            <option>Not sure yet</option>
+            <option>Under ₹5,000</option>
+            <option>₹5,000 - ₹10,000</option>
+            <option>₹20,000+</option>
         </select>
-      </label>
-      <label>
-        <span>Project details</span>
-        <textarea name="message" rows="4" required placeholder="What are you trying to build?"></textarea>
-      </label>
-      <button type="submit" class="btn btn-primary">Send message</button>
-  </form>
+
+    </label>
+
+    <label>
+        <span>Project Details</span>
+
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Tell me about your project..."
+            required></textarea>
+
+    </label>
+
+    <button
+        type="submit"
+        class="btn btn-primary">
+
+        Send Message
+
+    </button>
+
+</form>
   </div>
 </section>
 
