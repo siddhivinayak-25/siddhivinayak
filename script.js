@@ -251,3 +251,59 @@ revealTargets.forEach(el => {
   el.style.transition = 'opacity 0.6s ease, translate 0.6s ease';
   io.observe(el);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const form = document.querySelector(".contact-form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    result.innerHTML = "Sending...";
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+
+        result.classList.add("show");
+
+        result.innerHTML = `
+        <strong style="color:#8B5CF6;">✓ Message Sent Successfully</strong><br>
+        Thank you for reaching out! I'll get back to you as soon as possible.
+        `;
+
+        form.reset();
+
+        // Reload page after 4 seconds
+        setTimeout(() => {
+            window.location.reload();
+        }, 4000);
+
+    } else {
+
+        result.innerHTML =
+        "❌ Something went wrong. Please try again.";
+
+    }
+});
